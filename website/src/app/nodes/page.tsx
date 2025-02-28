@@ -96,7 +96,7 @@ export default function NodesPage() {
           </p>
           
           <div className="bg-secondary p-6 rounded-lg border border-neon-pink mb-8">
-            <h3 className="text-xl font-semibold mb-4">Zotel Infrastructure</h3>
+            <h3 className="text-xl font-semibold mb-4">Zostel Infrastructure</h3>
             <div className="space-y-4">
               <p>
                 Our network of Zostels functions as lite nodes providing additional accommodation and meeting points throughout the city.

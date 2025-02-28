@@ -21,8 +21,8 @@ const config: Config = {
         'neon-yellow': 'var(--neon-yellow)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        heading: ['var(--font-poppins)', 'sans-serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],
+        heading: ['var(--font-heading)', 'sans-serif'],
       },
       boxShadow: {
         'neon-green': '0 0 15px rgba(0, 255, 102, 0.5)',

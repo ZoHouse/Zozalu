@@ -31,7 +31,7 @@ const BentoItem = ({ title, description, href, linkText, className }: BentoItemT
     >
       <div className="flex flex-col items-center justify-center w-full">
         <h3 className="text-xl font-bold mb-4">{title}</h3>
-        <p className="text-muted mb-4 px-4 max-w-xs">{description}</p>
+        <p className="text-muted mb-4 px-4 max-w-xs whitespace-pre-line">{description}</p>
         {linkText && (
           <div className="mt-auto flex items-center gap-2 font-medium">
             <span>{linkText}</span>
@@ -57,40 +57,31 @@ const StaticBentoItem = ({ title, description, className }: Omit<BentoItemType, 
 
 const BentoSection = () => {
   return (
-    <section className="w-full px-4 py-12 md:py-24 space-y-8">
-      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+    <section className="w-full px-4 py-12 md:py-24 space-y-6">
+      <div className="flex flex-col items-center justify-center mb-6 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Explore <span className="text-primary">Zozalu</span>
+          Zo Zo <span className="text-primary">Zo</span>
         </h2>
-        <p className="max-w-[900px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Discover the key components of the Zozalu event framework
-        </p>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto max-w-7xl">
         <BentoItem
           title="Litepaper"
-          description="Zozalu is a concentrated academic sprint with a focus on problem-solving, collaboration, and knowledge sharing. Join us in Bangalore from April 1st to 15th, 2024."
+          description="A Pop Up City Initiative for Founder Members of Zo World."
           href="/litepaper"
-          linkText="Read More"
         />
         <BentoItem
           title="Schedule"
-          description="A 14-day residency-style event with a focus on problem-solving, collaboration, and knowledge sharing."
+          description="A glimpse into a well balanced lifestyle"
           href="/schedule"
-          linkText="View Schedule"
         />
         <BentoItem
           title="Nodes & Infrastructure"
-          description="Why we chose BLR?
-
-2 Beacon Nodes - BLRxZo, WTFxZo 
-2 Lite Nodes - Zostels 
-100+ members"
+          description="Why we chose Bangalore"
           href="/nodes"
         />
         <BentoItem
           title="Get Involved"
-          description="be a part of the shift"
+          description="Be a part of the SHIFT"
           href="/get-involved"
         />
       </div>
@@ -122,11 +113,6 @@ EXPANDING GLOBALLY"
           title="COMMUNITY OF CRYPTO BUILDERS"
           description="DIRECT ENGAGEMENT WITH HIGH-IMPACT WEB3 FOUNDERS & BUILDERS"
           className="bg-purple-500"
-        />
-        <StaticBentoItem
-          title="SHAPE THE FUTURE"
-          description="LEAD THE DECENTRALIZED CULTURAL MOVEMENT SHAPING THE FUTURE OF COMMUNITIES."
-          className="bg-blue-500"
         />
       </div>
     </section>
