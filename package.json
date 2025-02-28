@@ -1,0 +1,16 @@
+{
+  "name": "zozalu-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "website"
+  ],
+  "scripts": {
+    "build": "cd website && npm run build",
+    "start": "cd website && npm start",
+    "dev": "cd website && npm run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
