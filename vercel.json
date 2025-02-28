@@ -1,7 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/website/$1" }
-  ],
-  "buildCommand": "cd website && npm install && npm run build",
-  "outputDirectory": "website/.next"
+  "version": 2,
+  "projectSettings": {
+    "framework": "nextjs",
+    "buildCommand": "cd website && ./vercel-build.sh",
+    "outputDirectory": "website/.next",
+    "rootDirectory": "website"
+  }
 } 
