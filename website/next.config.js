@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     domains: [],
   },
+  output: 'standalone',
+  experimental: {
+    serverActions: true
+  }
 };
 
 module.exports = nextConfig; 
