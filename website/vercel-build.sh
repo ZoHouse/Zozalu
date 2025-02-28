@@ -15,12 +15,33 @@ cat package.json
 echo "Next.js config:"
 cat next.config.js
 
+echo "TSConfig contents:"
+cat tsconfig.json
+
+echo "Examining PostCSS config:"
+cat postcss.config.js
+
+echo "Examining src/components directory:"
+ls -la src/components
+
 # Create .npmrc with verbose settings
 echo "loglevel=verbose" > .npmrc
 
+# Force clear any node_modules to prevent issues
+echo "Clearing any existing node_modules..."
+rm -rf node_modules
+rm -rf .next
+
 # Install all dependencies including devDependencies
-echo "Installing dependencies..."
-npm install --ignore-workspace --prefer-offline --no-audit --no-fund --loglevel verbose
+echo "Installing dependencies with legacy-peer-deps..."
+npm install --ignore-workspace --legacy-peer-deps --prefer-offline --no-audit --no-fund --loglevel verbose || {
+    echo "DEPENDENCY INSTALLATION FAILED"
+    exit 1
+}
+
+# Verify PostCSS plugin installation
+echo "Checking if postcss-import is installed:"
+npm list postcss-import
 
 # Increase memory limit for Next.js build
 export NODE_OPTIONS="--max-old-space-size=3072"
