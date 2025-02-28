@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "cd website && chmod +x ./vercel-build.sh && ./vercel-build.sh",
+  "buildCommand": "cd website && npm install --no-audit --no-fund && chmod +x ./vercel-build.sh && ./vercel-build.sh",
   "outputDirectory": "website/.next",
   "framework": "nextjs",
   "cleanUrls": true

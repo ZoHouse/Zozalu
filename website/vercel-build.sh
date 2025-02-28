@@ -1,41 +1,43 @@
 #!/bin/bash
 
-# Exit on error but print the error message first
-set -e
-
+# ============== VERCEL BUILD DIAGNOSIS ==============
 echo "============== VERCEL BUILD DIAGNOSIS =============="
 echo "Timestamp: $(date)"
 echo "Current directory: $(pwd)"
-
-# Diagnostic information
 echo "Node version: $(node -v)"
 echo "NPM version: $(npm -v)"
-
-# List key directories
 echo "Directory contents:"
 ls -la
 
-# Check package.json
 echo "Package.json contents:"
 cat package.json
 
-# Check Next.js config
 echo "Next.js config:"
-cat next.config.js 2>/dev/null || echo "No next.config.js found"
+cat next.config.js
 
-# Create temp .npmrc to increase verbosity
+# Create .npmrc with verbose settings
 echo "loglevel=verbose" > .npmrc
 
-# Install dependencies with more verbose output
+# Install all dependencies including devDependencies
 echo "Installing dependencies..."
-npm install --prefer-offline --no-audit --no-fund --loglevel verbose || { echo "DEPENDENCY INSTALLATION FAILED"; exit 1; }
+npm install --prefer-offline --no-audit --no-fund --loglevel verbose
 
-# Build application with increased memory
+# Increase memory limit for Next.js build
+export NODE_OPTIONS="--max-old-space-size=3072"
+
+# Run the build with error handling
 echo "Building Next.js application with increased memory..."
-NODE_OPTIONS="--max-old-space-size=3072" npm run build || { echo "BUILD FAILED"; exit 1; }
+npm run build || {
+    echo "BUILD FAILED: Next.js build encountered an error"
+    exit 1
+}
 
-# Verify build output
-echo "Build output:"
-ls -la .next/ || echo "Build failed - no .next directory"
-
-echo "============== BUILD COMPLETE ==============" 
+# Verify the build output
+echo "Checking build output directory contents:"
+if [ -d ".next" ]; then
+    ls -la .next
+    echo "============== BUILD COMPLETE =============="
+else
+    echo "BUILD ERROR: .next directory not found"
+    exit 1
+fi 
