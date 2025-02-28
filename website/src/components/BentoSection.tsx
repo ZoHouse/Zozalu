@@ -96,7 +96,7 @@ const BentoSection = () => {
       </div>
       <div className="flex flex-col items-center justify-center space-y-4 text-center mt-16">
         <h2 className="text-4xl font-bold mb-10 text-center">
-          ABOUT <span className="text-primary">ZO</span>
+          ABOUT <span className="text-primary">Zo</span>
         </h2>
       </div>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-7xl p-4 bg-secondary border border-border rounded-lg">
