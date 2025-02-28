@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "chmod +x ./vercel-build.sh && ./vercel-build.sh",
-  "outputDirectory": ".next",
+  "buildCommand": "cd website && chmod +x ./vercel-build.sh && ./vercel-build.sh",
+  "outputDirectory": "website/.next",
   "framework": "nextjs",
-  "rootDirectory": "website",
   "cleanUrls": true
 } 
