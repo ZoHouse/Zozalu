@@ -20,7 +20,7 @@ echo "loglevel=verbose" > .npmrc
 
 # Install all dependencies including devDependencies
 echo "Installing dependencies..."
-npm install --prefer-offline --no-audit --no-fund --loglevel verbose
+npm install --ignore-workspace --prefer-offline --no-audit --no-fund --loglevel verbose
 
 # Increase memory limit for Next.js build
 export NODE_OPTIONS="--max-old-space-size=3072"
