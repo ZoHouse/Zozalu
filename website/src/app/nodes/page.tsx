@@ -15,59 +15,21 @@ export default function NodesPage() {
         </div>
         
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-neon-blue">Beacon Nodes</h2>
-          <p className="mb-6">
-            Our beacon nodes serve as central hubs for co-living, co-working, and experimental governance. They provide high-quality 
-            accommodation, workspaces, and facilities that sustain long-term innovation beyond the pop-up duration.
-          </p>
+          <h2 className="text-3xl font-semibold mb-6">
+            <Link href="https://blrxzo.zo.xyz" className="text-white hover:text-neon-blue hover:underline">
+              BLRxZo
+            </Link>
+          </h2>
+          <p className="text-xl mb-2">Socials: X, Telegram</p>
+          <p className="text-xl mb-8">Accommodation: 8 Dorm Beds, 4 Private rooms</p>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-secondary p-6 rounded-lg border border-neon-blue">
-              <h3 className="text-xl font-semibold mb-3 text-neon-blue">
-                <Link href="https://blrxzo.zo.xyz" className="text-neon-blue hover:underline">BLRxZo</Link>
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Accommodation</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>8 Dorm Beds</li>
-                    <li>4 Private Rooms</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Facilities</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Co-working spaces for deep work</li>
-                    <li>Event areas for workshops</li>
-                    <li>Collaborative zones</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-secondary p-6 rounded-lg border border-neon-purple">
-              <h3 className="text-xl font-semibold mb-3 text-neon-purple">
-                <Link href="https://wtfxzo.zo.xyz" className="text-neon-purple hover:underline">WTFxZo</Link>
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Accommodation</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>16 Dorm Beds</li>
-                    <li>2 Private Rooms</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Facilities</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>24/7 café & breakout zones</li>
-                    <li>Podcast studio</li>
-                    <li>Collaborative work areas</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2 className="text-3xl font-semibold mb-6">
+            <Link href="https://wtfxzo.zo.xyz" className="text-white hover:text-neon-purple hover:underline">
+              WTFxZo
+            </Link>
+          </h2>
+          <p className="text-xl mb-2">Socials: X, Telegram</p>
+          <p className="text-xl mb-8">Accommodation: 16 Dorm Beds, 2 Private rooms</p>
         </section>
         
         <section className="mb-12">
