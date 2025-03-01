@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ButtonLink } from './Button';
+import { ButtonLink } from '@/components/Button';
 import { useEffect, useRef } from 'react';
 
 const Hero = () => {

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function NodesPage() {
   return (
-    <DetailPageLayout title="Nodes & Infrastructure">
+    <DetailPageLayout title="Nodes">
       <div className="prose prose-invert max-w-none">
         <div className="bg-secondary p-6 rounded-lg border border-primary mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-primary">Decentralized Network Architecture</h2>
@@ -23,7 +23,9 @@ export default function NodesPage() {
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-secondary p-6 rounded-lg border border-neon-blue">
-              <h3 className="text-xl font-semibold mb-3 text-neon-blue">BLRxZo</h3>
+              <h3 className="text-xl font-semibold mb-3 text-neon-blue">
+                <Link href="https://blrxzo.zo.xyz" className="text-neon-blue hover:underline">BLRxZo</Link>
+              </h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold">Accommodation</h4>
@@ -44,7 +46,9 @@ export default function NodesPage() {
             </div>
             
             <div className="bg-secondary p-6 rounded-lg border border-neon-purple">
-              <h3 className="text-xl font-semibold mb-3 text-neon-purple">WTFxZo</h3>
+              <h3 className="text-xl font-semibold mb-3 text-neon-purple">
+                <Link href="https://wtfxzo.zo.xyz" className="text-neon-purple hover:underline">WTFxZo</Link>
+              </h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold">Accommodation</h4>
@@ -74,7 +78,9 @@ export default function NodesPage() {
           </p>
           
           <div className="bg-secondary p-6 rounded-lg border border-neon-pink mb-8">
-            <h3 className="text-xl font-semibold mb-4">Zostel Infrastructure</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              <Link href="https://zostel.com/zostel/bangalore" className="text-neon-pink hover:underline">Zostel Bangalore</Link>
+            </h3>
             <div className="space-y-4">
               <p>
                 Our network of Zostels functions as lite nodes providing additional accommodation and meeting points throughout the city.
