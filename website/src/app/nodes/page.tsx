@@ -40,17 +40,6 @@ export default function NodesPage() {
                     <li>Collaborative zones</li>
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-semibold">Connect</h4>
-                  <div className="flex space-x-4 mt-2">
-                    <Link href="https://twitter.com/BLRxZo" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">
-                      Twitter
-                    </Link>
-                    <Link href="https://t.me/BLRxZo" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">
-                      Telegram
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
             
@@ -71,17 +60,6 @@ export default function NodesPage() {
                     <li>Podcast studio</li>
                     <li>Collaborative work areas</li>
                   </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Connect</h4>
-                  <div className="flex space-x-4 mt-2">
-                    <Link href="https://twitter.com/WTFxZo" target="_blank" rel="noopener noreferrer" className="text-neon-purple hover:underline">
-                      Twitter
-                    </Link>
-                    <Link href="https://t.me/WTFxZo" target="_blank" rel="noopener noreferrer" className="text-neon-purple hover:underline">
-                      Telegram
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>
@@ -120,9 +98,9 @@ export default function NodesPage() {
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-secondary p-6 rounded-lg border border-border">
-              <h3 className="text-xl font-semibold mb-3">Governance</h3>
+              <h3 className="text-xl font-semibold mb-3">Co-Creation</h3>
               <p className="text-sm">
-                Nodes serve as testing grounds for decentralized governance models, with participants actively shaping policies and resource allocation via quadratic voting and other experimental mechanisms.
+                Nodes that enable co-living through shared living experiences, fostering community connections, collaborative projects, and meaningful interactions between diverse participants.
               </p>
             </div>
             

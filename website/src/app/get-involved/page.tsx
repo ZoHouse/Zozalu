@@ -75,50 +75,6 @@ export default function GetInvolvedPage() {
           </section>
         </div>
         
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-neon-pink">Community Participation Models</h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-secondary p-6 rounded-lg border border-neon-pink">
-              <h3 className="text-xl font-semibold mb-3">Token-Gated Access</h3>
-              <p className="text-sm mb-4">
-                Engage with blockchain-based governance and participation models that provide members with special access and voting rights.
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm">
-                <li>Access to exclusive events</li>
-                <li>Voting rights on key decisions</li>
-                <li>Resource allocation input</li>
-              </ul>
-            </div>
-            
-            <div className="bg-secondary p-6 rounded-lg border border-neon-pink">
-              <h3 className="text-xl font-semibold mb-3">Participatory Governance</h3>
-              <p className="text-sm mb-4">
-                Actively shape the future of Zozalu by participating in our experimental governance systems and decision-making processes.
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm">
-                <li>Quadratic voting experiments</li>
-                <li>Policy development</li>
-                <li>Resource management input</li>
-                <li>Community moderation</li>
-              </ul>
-            </div>
-            
-            <div className="bg-secondary p-6 rounded-lg border border-neon-pink">
-              <h3 className="text-xl font-semibold mb-3">Project Incubation</h3>
-              <p className="text-sm mb-4">
-                Develop your ideas within our supportive ecosystem and access resources to turn your vision into reality.
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm">
-                <li>Mentorship opportunities</li>
-                <li>Access to grants and funding</li>
-                <li>Collaborative workspace</li>
-                <li>Community feedback</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-primary">Thematic Contribution Areas</h2>
           
