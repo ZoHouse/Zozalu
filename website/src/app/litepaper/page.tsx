@@ -34,14 +34,27 @@ export default function LitepaperPage() {
           <div className="bg-secondary p-6 rounded-lg border border-neon-purple">
             <h3 className="text-xl font-semibold mb-3 text-neon-purple">Nodes</h3>
             <div className="mb-4">
-              <h4 className="font-semibold">BLRxZo</h4>
-              <p className="text-sm text-muted mb-1">Socials: X, Telegram</p>
-              <p className="text-sm text-muted">Accommodation: 8 Dorm Beds, 4 Private rooms</p>
+              <h4 className="font-semibold">Beacon Nodes</h4>
+              <div className="mb-3">
+                <p className="text-sm text-muted mb-1">
+                  <strong>BLRxZo</strong>: <Link href="https://x.com/BLRxZo" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BLRxZo</Link>
+                </p>
+                <p className="text-sm text-muted">Accommodation: 8 Dorm Beds, 4 Private rooms</p>
+              </div>
+              <div className="mb-3">
+                <p className="text-sm text-muted mb-1">
+                  <strong>WTFxZo</strong>: <Link href="https://x.com/WTFxZo" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">WTFxZo</Link>
+                </p>
+                <p className="text-sm text-muted">Accommodation: 16 Dorm Beds, 2 Private rooms</p>
+              </div>
             </div>
             <div>
-              <h4 className="font-semibold">WTFxZo</h4>
-              <p className="text-sm text-muted mb-1">Socials: X, Telegram</p>
-              <p className="text-sm text-muted">Accommodation: 16 Dorm Beds, 2 Private rooms</p>
+              <h4 className="font-semibold">Lite Nodes</h4>
+              <div>
+                <p className="text-sm text-muted mb-1">
+                  <strong>Zostel</strong>: <Link href="https://www.zostel.com/zostel/bangalore/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Zostel Bangalore</Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
