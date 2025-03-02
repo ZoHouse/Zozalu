@@ -1,5 +1,6 @@
 import DetailPageLayout from '@/components/DetailPageLayout';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function NodesPage() {
   return (
@@ -22,48 +23,80 @@ export default function NodesPage() {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-secondary p-6 rounded-lg border border-neon-blue">
-              <h3 className="text-xl font-semibold mb-3 text-neon-blue">
+            <div className="bg-secondary p-8 rounded-lg border border-neon-blue relative overflow-hidden">
+              <h3 className="text-xl font-semibold mb-4 text-neon-blue">
                 <Link href="https://blrxzo.zo.xyz" className="text-neon-blue hover:underline">BLRxZo</Link>
               </h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Accommodation</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>8 Dorm Beds</li>
-                    <li>4 Private Rooms</li>
-                  </ul>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <div className="md:col-span-3 space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Accommodation</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>8 Dorm Beds</li>
+                      <li>4 Private Rooms</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Facilities</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Co-working spaces for deep work</li>
+                      <li>Event areas for workshops</li>
+                      <li>Collaborative zones</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold">Facilities</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Co-working spaces for deep work</li>
-                    <li>Event areas for workshops</li>
-                    <li>Collaborative zones</li>
-                  </ul>
+                <div className="md:col-span-2 h-64 md:h-auto relative">
+                  <div className="absolute inset-0 md:inset-x-0 md:inset-y-2 flex items-center justify-center">
+                    <div className="relative w-full h-full max-w-full">
+                      <Image 
+                        src="/images/nodes/blrxzo.png" 
+                        alt="BLRxZo Beacon Node" 
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        className="hover:scale-105 transition-transform duration-300"
+                        priority
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-secondary p-6 rounded-lg border border-neon-purple">
-              <h3 className="text-xl font-semibold mb-3 text-neon-purple">
+            <div className="bg-secondary p-8 rounded-lg border border-neon-purple relative overflow-hidden">
+              <h3 className="text-xl font-semibold mb-4 text-neon-purple">
                 <Link href="https://wtfxzo.zo.xyz" className="text-neon-purple hover:underline">WTFxZo</Link>
               </h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">Accommodation</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>16 Dorm Beds</li>
-                    <li>2 Private Rooms</li>
-                  </ul>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <div className="md:col-span-3 space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Accommodation</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>16 Dorm Beds</li>
+                      <li>2 Private Rooms</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Facilities</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>24/7 café & breakout zones</li>
+                      <li>Podcast studio</li>
+                      <li>Collaborative work areas</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold">Facilities</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>24/7 café & breakout zones</li>
-                    <li>Podcast studio</li>
-                    <li>Collaborative work areas</li>
-                  </ul>
+                <div className="md:col-span-2 h-64 md:h-auto relative">
+                  <div className="absolute inset-0 md:inset-x-0 md:inset-y-2 flex items-center justify-center">
+                    <div className="relative w-full h-full max-w-full">
+                      <Image 
+                        src="/images/nodes/wtfxzo.png" 
+                        alt="WTFxZo Beacon Node" 
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        className="hover:scale-105 transition-transform duration-300"
+                        priority
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

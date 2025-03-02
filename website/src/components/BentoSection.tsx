@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Custom arrow SVG component
 const ArrowRight = ({ className }: { className?: string }) => (
@@ -58,10 +59,17 @@ const StaticBentoItem = ({ title, description, className }: Omit<BentoItemType, 
 const BentoSection = () => {
   return (
     <section className="w-full px-4 py-12 md:py-24 space-y-6">
-      <div className="flex flex-col items-center justify-center mb-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Zo Zo <span className="text-primary">Zo</span>
-        </h2>
+      <div className="flex flex-col items-center justify-center mb-8 text-center">
+        <div className="relative w-full max-w-[300px] md:max-w-[500px] h-[90px] md:h-[150px] mb-4">
+          <Image 
+            src="/images/zo zo zo 2.png" 
+            alt="Zo Zo Zo" 
+            fill
+            style={{ objectFit: 'contain' }}
+            priority
+            className="hover:scale-105 transition-transform duration-300"
+          />
+        </div>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto max-w-7xl">
         <BentoItem
