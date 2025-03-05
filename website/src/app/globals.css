@@ -13,19 +13,8 @@
   --neon-yellow: #ffff00;
 }
 
-/* Dark Theme (default) */
-.dark-theme, :root {
-  --background: #050505;
-  --foreground: #ffffff;
-  --primary: #00ff66;
-  --primary-hover: #00cc52;
-  --secondary: #0c0c0c;
-  --border: #222222;
-  --muted: #888888;
-}
-
-/* Light Theme */
-.light-theme {
+/* Light Theme (default) */
+.light-theme, :root {
   --background: #f8f8f8;
   --foreground: #050505;
   --primary: #00cc52;
@@ -33,6 +22,17 @@
   --secondary: #e0e0e0;
   --border: #cdcdcd;
   --muted: #717171;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --background: #050505;
+  --foreground: #ffffff;
+  --primary: #00ff66;
+  --primary-hover: #00cc52;
+  --secondary: #0c0c0c;
+  --border: #222222;
+  --muted: #888888;
 }
 
 /* Force theme color regardless of system preference */
