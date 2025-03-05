@@ -11,6 +11,7 @@ const ArrowRight = ({ className }: { className?: string }) => (
     stroke="currentColor"
     aria-hidden="true"
   >
+    <title>Arrow right</title>
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
   </svg>
 );
@@ -114,7 +115,7 @@ EXPANDING GLOBALLY"
         />
         <StaticBentoItem
           title="ZO NODES ACROSS THE GLOBE"
-          description="ACTIVE ZO CLUBHOUSES IN TOP GLOBAL CITIES, REACH KYC'D TRAVELLER COMMUNITY IN ASIA"
+          description="PHYSICAL ZO LOCATIONS IN MAJOR CITIES, CONNECTING VERIFIED TRAVELERS THROUGHOUT ASIA"
           className="bg-yellow-500 text-black"
         />
         <StaticBentoItem
