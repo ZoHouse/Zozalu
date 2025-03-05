@@ -71,8 +71,8 @@ const Hero = () => {
           strokeLinejoin="round"
           className="opacity-50"
           aria-hidden="true"
-          title="Scroll down"
         >
+          <title>Scroll down</title>
           <polyline points="7 13 12 18 17 13" />
           <polyline points="7 6 12 11 17 6" />
         </svg>
