@@ -35,43 +35,25 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-[90vh] py-20 text-center px-4 relative overflow-hidden">
+    <section className="flex flex-col items-center justify-center min-h-[70vh] py-8 text-center px-4 relative overflow-hidden bg-background">
       {/* Clean background - no gradient overlay */}
       
       <h1 
         ref={titleRef}
-        className="text-7xl md:text-9xl font-bold mb-6 tracking-tight relative transition-transform duration-200 ease-out"
-        style={{ 
-          fontFamily: 'var(--font-poppins), sans-serif',
-          letterSpacing: '-0.03em'
-        }}
+        className="text-7xl md:text-9xl font-bold mb-4 tracking-tight relative transition-transform duration-200 ease-out"
       >
-        <span className="relative inline-block">
-          Zozalu
-          <span className="absolute inset-0 blur-md opacity-10 bg-primary rounded-full" style={{ filter: 'blur(30px)' }} />
-        </span>
+        Zozalu
       </h1>
       
-      <p className="text-xl md:text-2xl mb-10 max-w-2xl animate-fadeIn" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-        A pop up initiative by Founders of Zo World
+      <p className="text-xl md:text-2xl mb-6 max-w-2xl animate-fadeIn text-foreground">
+        A Pop Up Initiative by Founder Members of Zo World
       </p>
       
-      <div className="animate-fadeIn animation-delay-300">
-        <ButtonLink 
-          href="#get-involved" 
-          size="lg"
-          className="hover:scale-105 transition-transform font-poppins text-xl px-8 py-4"
-        >
-          Register Now
-        </ButtonLink>
-      </div>
-      
       {/* Simple down arrow for scrolling */}
-      <button 
+      <button
         type="button"
-        onClick={scrollToNextSection}
-        className="absolute bottom-8 animate-bounce bg-transparent border-none cursor-pointer focus:outline-none"
-        aria-label="Scroll down to learn more"
+        className="absolute bottom-4 animate-bounce bg-transparent border-none cursor-pointer text-foreground"
+        aria-label="Scroll down for more content"
       >
         <svg 
           width="24" 
@@ -85,7 +67,6 @@ const Hero = () => {
           className="opacity-50 hover:opacity-100 transition-opacity"
           aria-hidden="true"
         >
-          <title>Scroll down</title>
           <polyline points="7 13 12 18 17 13" />
           <polyline points="7 6 12 11 17 6" />
         </svg>
