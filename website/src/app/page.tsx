@@ -1,11 +1,11 @@
 import Hero from '@/components/Hero';
-import BentoSection from '@/components/BentoSection';
+import ScrollSections from '@/components/ScrollSections';
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <BentoSection />
+      <ScrollSections />
     </div>
   );
 }

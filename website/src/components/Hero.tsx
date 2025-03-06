@@ -26,8 +26,16 @@ const Hero = () => {
     };
   }, []);
 
+  // Smooth scroll to next section
+  const scrollToNextSection = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] py-20 text-center px-4 relative overflow-hidden">
+    <section className="flex flex-col items-center justify-center min-h-[90vh] py-20 text-center px-4 relative overflow-hidden">
       {/* Clean background - no gradient overlay */}
       
       <h1 
@@ -59,7 +67,12 @@ const Hero = () => {
       </div>
       
       {/* Simple down arrow for scrolling */}
-      <div className="absolute bottom-8 animate-bounce">
+      <button 
+        type="button"
+        onClick={scrollToNextSection}
+        className="absolute bottom-8 animate-bounce bg-transparent border-none cursor-pointer focus:outline-none"
+        aria-label="Scroll down to learn more"
+      >
         <svg 
           width="24" 
           height="24" 
@@ -69,14 +82,14 @@ const Hero = () => {
           strokeWidth="2" 
           strokeLinecap="round" 
           strokeLinejoin="round"
-          className="opacity-50"
+          className="opacity-50 hover:opacity-100 transition-opacity"
           aria-hidden="true"
         >
           <title>Scroll down</title>
           <polyline points="7 13 12 18 17 13" />
           <polyline points="7 6 12 11 17 6" />
         </svg>
-      </div>
+      </button>
     </section>
   );
 };
