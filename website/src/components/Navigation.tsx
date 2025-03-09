@@ -5,9 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Schedule', href: '#schedule' },
-  { label: 'Infrastructure', href: '#infrastructure' },
+  { label: 'Home', href: '#hero' },
+  { label: 'TLDR', href: '#abstract' },
+  { label: 'Schedule', href: '#event-details' },
+  { label: 'Food', href: '#meal-plan' },
+  { label: 'Nodes', href: '#infrastructure' },
   { label: 'Mentors', href: '#mentors' },
   { label: 'Partners', href: '#partners' },
 ];

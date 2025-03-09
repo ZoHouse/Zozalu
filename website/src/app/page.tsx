@@ -1,5 +1,4 @@
 import Hero from '@/components/Hero';
-import BentoSection from '@/components/BentoSection';
 import TLDR from '@/components/TLDR';
 import EventDetails from '@/components/EventDetails';
 import MealPlan from '@/components/MealPlan';
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <BentoSection />
       <TLDR />
       <EventDetails />
       <MealPlan />
