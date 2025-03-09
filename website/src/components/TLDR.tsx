@@ -60,7 +60,7 @@ const TLDR = () => {
                   <title>Celebration feature icon</title>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-lg text-white group-hover:text-primary transition-colors">Each Moment Celebrated On-Chain</span>
+                <span className="text-lg text-white group-hover:text-primary transition-colors">Each interaction celebrated onchain</span>
               </li>
               <li className="flex items-center space-x-3 animate-fadeIn animation-delay-300 group">
                 <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
