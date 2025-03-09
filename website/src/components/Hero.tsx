@@ -40,12 +40,12 @@ const Hero = () => {
       
       <h1 
         ref={titleRef}
-        className="text-7xl md:text-9xl font-bold mb-4 tracking-tight relative transition-transform duration-200 ease-out"
+        className="text-7xl md:text-9xl font-bold mb-2 tracking-tight relative transition-transform duration-200 ease-out"
       >
         Zozalu
       </h1>
       
-      <p className="text-xl md:text-2xl mb-6 max-w-2xl animate-fadeIn text-foreground">
+      <p className="text-xl md:text-2xl mb-4 max-w-2xl animate-fadeIn text-foreground">
         A Pop Up Initiative by Founder Members of Zo World
       </p>
       

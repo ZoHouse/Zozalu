@@ -3,16 +3,12 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const navItems = [
+const links = [
   { label: 'About', href: '#about' },
-  { label: 'Abstract', href: '#abstract' },
+  { label: 'Schedule', href: '#schedule' },
   { label: 'Infrastructure', href: '#infrastructure' },
-  { label: 'Partners', href: '#partners' },
   { label: 'Mentors', href: '#mentors' },
-  { label: 'Nodes', href: '#nodes' },
-  { label: 'Bounties', href: '#bounties' },
-  { label: 'Proof of Vibes', href: '#proof-of-vibes' },
-  { label: 'Register', href: '#register' },
+  { label: 'Partners', href: '#partners' },
 ];
 
 const Navigation = () => {
@@ -21,7 +17,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => ({
+      const sections = links.map(item => ({
         id: item.href.substring(1),
         offset: document.getElementById(item.href.substring(1))?.offsetTop || 0,
       }));
@@ -85,7 +81,7 @@ const Navigation = () => {
         } lg:block lg:relative lg:top-0 lg:bg-transparent lg:border-none`}
       >
         <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 p-4 lg:p-0">
-          {navItems.map((item) => (
+          {links.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
