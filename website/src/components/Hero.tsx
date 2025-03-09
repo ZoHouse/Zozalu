@@ -1,24 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
 
 const Hero = () => {
-  const titleRef = useRef<HTMLHeadingElement>(null);
-
-  // Tilt effect on mouse move
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!titleRef.current) return;
-      const x = e.clientX / window.innerWidth - 0.5;
-      const y = e.clientY / window.innerHeight - 0.5;
-      titleRef.current.style.transform = `perspective(1000px) rotateY(${x * 3}deg) rotateX(${y * -3}deg)`;
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   return (
     <section id="hero" className="relative min-h-screen flex items-center">
       {/* Background Image */}
@@ -38,7 +22,6 @@ const Hero = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
         <div className="max-w-3xl space-y-6">
           <h1 
-            ref={titleRef}
             className="text-7xl md:text-9xl font-bold text-white tracking-tight 
             [text-shadow:_0_2px_4px_rgba(0,0,0,0.4),_0_4px_8px_rgba(0,0,0,0.3),_0_8px_16px_rgba(0,0,0,0.3)]"
           >

@@ -13,10 +13,10 @@ const TLDR = () => {
           {/* Left Column - Main Text */}
           <div className="space-y-8">
             <p className="text-lg leading-relaxed animate-fadeIn">
-              For humans to evolve, we need to form a collective consciousness. This cognitive unity is achieved through shared context, which is built by experiencing adventures together.
+              Zozalu is a two-week pop-up initiative designed to accelerate innovation and catalyze a radical shift in the lifestyle of a Zo World Citizen, beginning in Bangalore. Zozalu aims for sustained impact by leveraging permanent Zo House nodes and lite nodes, fostering continuous collaboration and project growth throughout the year.
             </p>
             <p className="text-lg leading-relaxed animate-fadeIn animation-delay-300">
-              Zozalu is a two-week pop-up initiative designed to accelerate innovation and catalyze a radical shift in the lifestyle of a Zo World Citizen, beginning in Bangalore. Zozalu aims for sustained impact by leveraging permanent Zo House nodes and lite nodes, fostering continuous collaboration and project growth throughout the year.
+              For humans to evolve, we need to form a collective consciousness. This cognitive unity is achieved through shared context, which is built by experiencing adventures together.
             </p>
             <p className="text-lg leading-relaxed animate-fadeIn animation-delay-300">
               Through our physical nodes and verified community, we're establishing safe spaces for collaboration, learning, and growth within the community come join the network and register your node to accelerate humanity.
@@ -68,6 +68,20 @@ const TLDR = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-lg text-white group-hover:text-primary transition-colors">Permanent Nodes and Friendships Established</span>
+              </li>
+              <li className="flex items-center space-x-3 animate-fadeIn animation-delay-300 group">
+                <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <title>Journey feature icon</title>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-lg text-white group-hover:text-primary transition-colors">10x Journeys Immortalised Onchain</span>
+              </li>
+              <li className="flex items-center space-x-3 animate-fadeIn animation-delay-300 group">
+                <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <title>Cognitive feature icon</title>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-lg text-white group-hover:text-primary transition-colors">Cognitive Unisync Achieved</span>
               </li>
             </ul>
           </div>
