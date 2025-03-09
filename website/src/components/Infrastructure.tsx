@@ -1,13 +1,17 @@
+import Image from 'next/image';
+
 const NodeCard = ({
   name,
   description,
   accommodation,
   url,
+  imagePath,
 }: {
   name: string;
   description: string;
   accommodation?: { dorms: number; privateRooms: number };
   url: string;
+  imagePath: string;
 }) => (
   <a 
     href={url}
@@ -16,6 +20,15 @@ const NodeCard = ({
     className="bento-item block hover:border-primary transition-colors"
   >
     <h3 className="text-2xl font-bold mb-4">{name}</h3>
+    <div className="relative w-full h-48 mb-4">
+      <Image
+        src={imagePath}
+        alt={`${name} location`}
+        fill
+        style={{ objectFit: 'contain' }}
+        priority
+      />
+    </div>
     <div className="space-y-4">
       <p className="text-muted">{description}</p>
       <div>
@@ -54,6 +67,7 @@ const Infrastructure = () => {
             name="BLRxZo"
             description="Experience the vibrant tech scene of Bangalore at BLRxZo. Our space features dedicated workstations, comfortable accommodation, and collaborative areas perfect for innovation and community building."
             url="https://x.com/blrxzo"
+            imagePath="/BLRxZo_Isometric_Render.png"
             accommodation={{
               dorms: 8,
               privateRooms: 4
@@ -63,6 +77,7 @@ const Infrastructure = () => {
             name="WTFxZo"
             description="A luxury villa in Whitefield's tech hub offering serene co-living with garden spaces, common areas, and modern co-working facilities. Perfect for those seeking a peaceful yet collaborative environment."
             url="https://x.com/wtfxzo"
+            imagePath="/Zo House Isometric latest.png"
             accommodation={{
               dorms: 16,
               privateRooms: 2
