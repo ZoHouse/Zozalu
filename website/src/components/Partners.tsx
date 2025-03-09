@@ -21,9 +21,9 @@ const partners: Partner[] = [
 
 const Partners = () => {
   return (
-    <section id="partners" className="py-20 bg-background">
+    <section id="partners" className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-white">
           Partners
         </h2>
         
@@ -34,7 +34,7 @@ const Partners = () => {
               href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="bento-item flex flex-col items-center justify-center p-8 hover:scale-105 transition-transform"
+              className="bg-zinc-900 rounded-xl flex flex-col items-center justify-center p-8 hover:scale-105 transition-transform border border-zinc-800"
             >
               <div className="relative w-full h-32 flex items-center justify-center mb-4">
                 <Image
@@ -52,7 +52,7 @@ const Partners = () => {
                   unoptimized
                 />
               </div>
-              <h3 className="text-xl font-semibold text-center">{partner.name}</h3>
+              <h3 className="text-xl font-semibold text-center text-white">{partner.name}</h3>
             </a>
           ))}
         </div>
