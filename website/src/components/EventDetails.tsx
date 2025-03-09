@@ -361,7 +361,7 @@ const EventDetails = () => {
               </svg>
               <div>
                 <h3 className="text-xl font-bold">When</h3>
-                <p className="text-lg">April 1st – 15th</p>
+                <p className="text-lg">TBD</p>
               </div>
             </div>
           </div>
