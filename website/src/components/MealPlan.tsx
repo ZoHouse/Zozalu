@@ -1,6 +1,6 @@
 const MealPlan = () => {
   return (
-    <section id="meal-plan" className="py-20 bg-background">
+    <section id="meal-plan" className="py-12 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           Food For Thought

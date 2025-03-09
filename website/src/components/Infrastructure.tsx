@@ -39,10 +39,6 @@ const NodeCard = ({
           <li>10 Co-working Slots</li>
         </ul>
       </div>
-      <div>
-        <h4 className="text-lg font-semibold mb-2 text-primary">Starting Price</h4>
-        <p className="text-xl font-bold">₹1599</p>
-      </div>
       <div className="inline-flex items-center text-primary">
         View Details
         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +52,7 @@ const NodeCard = ({
 
 const Infrastructure = () => {
   return (
-    <section id="infrastructure" className="py-20 bg-secondary">
+    <section id="infrastructure" className="py-12 bg-secondary">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           Infrastructure & Nodes
@@ -96,10 +92,6 @@ const Infrastructure = () => {
             <h3 className="text-2xl font-bold mb-4">Zostel Koramangala</h3>
             <div className="space-y-4">
               <p className="text-muted">Experience the happening scene of Bangalore right at the hub with Zostel Bangalore (Koramangala). Our multiple common areas, dedicated workspace, and spacious dorms make it among the best hostels in Bangalore.</p>
-              <div>
-                <h4 className="text-lg font-semibold mb-2 text-primary">Starting Price</h4>
-                <p className="text-xl font-bold">₹599</p>
-              </div>
               <div className="inline-flex items-center text-primary">
                 View Details
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,10 +111,6 @@ const Infrastructure = () => {
             <h3 className="text-2xl font-bold mb-4">Zostel Indiranagar</h3>
             <div className="space-y-4">
               <p className="text-muted">Zostel Bangalore (Indiranagar) offers you a convenient, social stay in Bangalore's party hub of Indiranagar. It features indoor and outdoor common areas, a quaint cafe for homely meals, and well-equipped workstations.</p>
-              <div>
-                <h4 className="text-lg font-semibold mb-2 text-primary">Starting Price</h4>
-                <p className="text-xl font-bold">₹599</p>
-              </div>
               <div className="inline-flex items-center text-primary">
                 View Details
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

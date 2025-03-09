@@ -334,7 +334,7 @@ const EventDetails = () => {
   };
 
   return (
-    <section id="event-details" className="py-20 bg-secondary">
+    <section id="event-details" className="py-12 bg-secondary">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
           Event Details

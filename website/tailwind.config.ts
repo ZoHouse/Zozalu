@@ -30,6 +30,21 @@ const config: Config = {
         'neon-pink': '0 0 15px rgba(255, 0, 200, 0.5)',
         'neon-purple': '0 0 15px rgba(157, 0, 255, 0.5)',
       },
+      animation: {
+        'glow-pulse': 'glow-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        'glow-pulse': {
+          '0%, 100%': {
+            'box-shadow': '0 0 20px 10px rgba(0, 255, 102, 0.3)',
+            transform: 'translateY(-4px)',
+          },
+          '50%': {
+            'box-shadow': '0 0 30px 15px rgba(0, 255, 102, 0.5)',
+            transform: 'translateY(-6px)',
+          },
+        },
+      },
     },
   },
   plugins: [],

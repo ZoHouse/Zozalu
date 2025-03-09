@@ -6,7 +6,7 @@ import MealPlan from '@/components/MealPlan';
 import Infrastructure from '@/components/Infrastructure';
 import Mentors from '@/components/Mentors';
 import Partners from '@/components/Partners';
-import Footer from '@/components/Footer';
+import ApplyNow from '@/components/ApplyNow';
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
       <EventDetails />
       <MealPlan />
       <Infrastructure />
+      <ApplyNow />
       <Mentors />
       <Partners />
-      <Footer />
     </main>
   );
 }
